@@ -1,4 +1,5 @@
-import React, { useState, ChangeEvent } from 'react';
+import React, { useState } from 'react';
+import type { ChangeEvent } from 'react';
 import clsx from 'clsx';
 import numeral from 'numeral';
 import PerfectScrollbar from 'react-perfect-scrollbar';
