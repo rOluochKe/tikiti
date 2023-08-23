@@ -1,5 +1,5 @@
 {
-  "name": "tikiti-enterprise-app",
+  "name": "react-enterprise-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,6 +33,7 @@
     "@types/testing-library__jest-dom": "5.9.5",
     "@types/webpack-env": "1.15.3",
     "@types/yup": "0.29.9",
+    "apexcharts": "3.22.3",
     "axios": "0.21.0",
     "clsx": "1.1.1",
     "cross-env": "7.0.2",
@@ -45,6 +46,7 @@
     "i18next-browser-languagedetector": "4.0.2",
     "jest-styled-components": "7.0.3",
     "lint-staged": "10.5.2",
+    "moment": "2.29.1",
     "node-plop": "0.26.2",
     "notistack": "1.0.2",
     "numeral": "2.0.6",
@@ -94,7 +96,8 @@
     "lint:css": "stylelint src/**/*.css",
     "generate": "cross-env TS_NODE_PROJECT='./internals/ts-node.tsconfig.json' plop --plopfile internals/generators/plopfile.ts",
     "prettify": "prettier --write",
-    "backend": "json-server --watch db.json --port 5000 --delay=1000"
+    "backend": "json-server --watch db.json --port 5000 --delay=1000 -m ./node_modules/json-server-auth",
+    "start:fullstack": "concurrently \"npm run backend\" \"npm run start\""
   },
   "browserslist": {
     "production": [
