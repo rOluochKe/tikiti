@@ -103,14 +103,24 @@
       "variants": 1
     }
   ],
+  "users": [
+    {
+      "id": "7fguyfte5",
+      "email": "demo@acme.io",
+      "password": "$2a$10$Pmk32D/fgkig8pU.r1rGrOpYYJSrnqqpLO6dRdo88iYxxIsl1sstC",
+      "name": "Mok Kuh",
+      "mobile": "+34782364823",
+      "policy": true
+    }
+  ],
   "events": [
     {
       "id": "5e8882e440f6322fa399eeb8",
       "allDay": false,
       "color": "green",
       "description": "Inform about new contract",
-      "end": "2023-01-01T12:00:27.87+00:20",
-      "start": "2023-01-01T12:00:27.87+00:20",
+      "end": "2021-01-01T12:00:27.87+00:20",
+      "start": "2021-01-01T12:00:27.87+00:20",
       "title": "Call Samantha"
     },
     {
@@ -118,8 +128,8 @@
       "allDay": false,
       "color": null,
       "description": "Discuss about new partnership",
-      "end": "2023-01-01T12:00:27.87+00:20",
-      "start": "2023-01-01T12:00:27.87+00:20",
+      "end": "2021-01-01T12:00:27.87+00:20",
+      "start": "2021-01-01T12:00:27.87+00:20",
       "title": "Meet with IBM"
     },
     {
@@ -127,8 +137,8 @@
       "allDay": false,
       "color": null,
       "description": "Prepare docs",
-      "end": "2023-01-01T12:00:27.87+00:20",
-      "start": "2023-01-01T12:00:27.87+00:20",
+      "end": "2021-01-01T12:00:27.87+00:20",
+      "start": "2021-01-01T12:00:27.87+00:20",
       "title": "SCRUM Planning"
     },
     {
@@ -136,8 +146,8 @@
       "allDay": true,
       "color": null,
       "description": "Meet with team to discuss",
-      "end": "2022-12-12T12:30:00-05:00",
-      "start": "2022-11-11T12:00:27.87+00:20",
+      "end": "2020-12-12T12:30:00-05:00",
+      "start": "2020-11-11T12:00:27.87+00:20",
       "title": "Begin SEM"
     },
     {
@@ -145,8 +155,8 @@
       "allDay": false,
       "color": "green",
       "description": "Sorry, John!",
-      "end": "2023-01-01T12:00:27.87+00:20",
-      "start": "2023-01-01T12:00:27.87+00:20",
+      "end": "2021-01-01T12:00:27.87+00:20",
+      "start": "2021-01-01T12:00:27.87+00:20",
       "title": "Fire John"
     },
     {
@@ -154,8 +164,8 @@
       "allDay": false,
       "color": null,
       "description": "Discuss about the new project",
-      "end": "2023-01-01T12:00:27.87+00:20",
-      "start": "2023-01-01T12:00:27.87+00:20",
+      "end": "2021-01-01T12:00:27.87+00:20",
+      "start": "2021-01-01T12:00:27.87+00:20",
       "title": "Call Alex"
     },
     {
@@ -163,9 +173,37 @@
       "allDay": false,
       "color": "green",
       "description": "Get a new quote for the payment processor",
-      "end": "2023-01-01T12:00:27.87+00:20",
-      "start": "2023-01-01T12:00:27.87+00:20",
+      "end": "2021-01-01T12:00:27.87+00:20",
+      "start": "2021-01-01T12:00:27.87+00:20",
       "title": "Visit Samantha"
+    }
+  ],
+  "users-db": [
+    {
+      "id": "7fguyfte5",
+      "email": "demo@acme.io",
+      "name": "Mok Kuh",
+      "password": "$2a$10$.vEI32nHFyG15ZACR7q/J.DNT/7iFC1Gfi2fFPMsG09LCPtwk0q/.",
+      "avatar": "/images/avatar_6.png",
+      "canHire": true,
+      "country": "United States",
+      "city": "NY",
+      "isPublic": true,
+      "phone": "+40 777666555",
+      "role": "admin",
+      "state": "New York",
+      "tier": "Premium",
+      "subscription": {
+        "name": "Premium",
+        "price": 29,
+        "currency": "$",
+        "proposalsLeft": 12,
+        "templatesLeft": 5,
+        "invitesLeft": 24,
+        "adsLeft": 10,
+        "hasAnalytics": true,
+        "hasEmailAlerts": true
+      }
     }
   ]
 }
