@@ -69,7 +69,6 @@ const slice = createSlice({
     },
     selectRange(state, action: PayloadAction<{ start: number; end: number }>) {
       const { start, end } = action.payload;
-
       state.isModalOpen = true;
       state.selectedRange = {
         start,

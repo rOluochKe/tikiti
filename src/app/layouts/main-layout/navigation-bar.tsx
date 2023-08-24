@@ -1,41 +1,57 @@
 import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import { colors } from '@material-ui/core';
+import { useSelector } from 'react-redux';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { RootState } from 'store/reducers';
+import HeaderProfile from 'app/components/header-profile';
+
+import {
+  AppBar,
+  Toolbar,
+  Button,
+  useMediaQuery,
+  colors,
+} from '@material-ui/core';
 
 export default function NavigationBar() {
   const classes = useStyles();
+  const { claims } = useSelector((state: RootState) => state.auth);
+  const mobileDevice = useMediaQuery('(max-width:650px)');
 
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <Link className={`${classes.link} ${classes.title}`} to={'/'}>
-            LOGO
+            {!mobileDevice && 'LOGO'}
           </Link>
-          <Button color="inherit">
+
+          <Button className={classes.menuButton} color="inherit">
             <Link className={classes.link} to={'/'}>
               Home
             </Link>
           </Button>
-          <Button color="inherit">
+          <Button className={classes.menuButton} color="inherit">
             <Link className={classes.link} to={'/about'}>
               About
             </Link>
           </Button>
-          <Button color="inherit">
-            <Link className={classes.link} to={'/dashboard'}>
-              Dashboard
-            </Link>
-          </Button>
-          <Button color="inherit">
-            <Link className={classes.link} to={'/login'}>
-              Login
-            </Link>
-          </Button>
+          {claims ? (
+            <>
+              <Button className={classes.menuButton} color="inherit">
+                <Link className={classes.link} to={'/dashboard'}>
+                  Dashboard
+                </Link>
+              </Button>
+              <HeaderProfile />
+            </>
+          ) : (
+            <Button className={classes.menuButton} color="inherit">
+              <Link className={classes.link} to={'/login'}>
+                Login
+              </Link>
+            </Button>
+          )}
         </Toolbar>
       </AppBar>
     </div>

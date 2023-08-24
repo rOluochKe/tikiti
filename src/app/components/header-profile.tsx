@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import { Theme, withStyles } from '@material-ui/core/styles';
 import Menu, { MenuProps } from '@material-ui/core/Menu';
@@ -21,9 +21,9 @@ const HeaderProfile = () => {
 
   const { profile } = useSelector((state: RootState) => state.profile);
 
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
-  const handleClick = (event: MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
 

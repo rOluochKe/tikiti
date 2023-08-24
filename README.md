@@ -1,1 +1,1 @@
-# Tikiti Enterprise Application
+# Tikiti Enterprise App
