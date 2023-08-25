@@ -46,8 +46,8 @@ JSON Server: To simulate a backend during development, JSON Server is integrated
 
 1. Clone the repository:
    ```
-   git clone git@github.com:rOluochKe/tikiti-enterprise-app.git
-   cd tikiti-enterprise-app
+   git clone git@github.com:rOluochKe/tikiti.git
+   cd tikiti
    ```
 2. Install dependencies for the app:
 
